@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <form action="/action_page.php" id="form1">
+    First Name: <input type="text" name="Fname" value="Gedeon"><BR></BR>
+    Last Name: <input type="text" name="Lname" value="DUFITIMANA">
+    <p>Once you are done to fill out your <b>names</b>,<br> please click on below submit button</p><br><br>
+    <input type="submit" value="Submit">
+</form> 
+    <br>
+    <p>The following are the element of the value that are in our form</p>
+    <p>-----------------------------------------------------------------------------------</p>
+    <p id="demo"></p>
+
+    <script>
+        const x = document.forms['form1'];
+        let text = "";
+        for(let i = 0; i < x.length; i++){
+            text+= x.elements[i].name +'<br>';
+        }
+document.getElementById("demo").innerHTML= text;
+    </script>
+   
+</body>
+</html>
