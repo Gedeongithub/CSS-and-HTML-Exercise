@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rwanda</title>
+</head>
+<body>
+    <header>
+        <h1 id="headerr">The history of <b>Rwanda</b></h1>
+        <p class="intro">Rwanda is the smallest country located in eastern part of Africa.</p>
+        <p class="intro">It borders with <b>Uganda</b> in North, <b>Tanzania</b> in east, <b>DRC</b> in west and <b>Burundi</b> in South</p>
+        <p id="demo"></p>
+        <h2 id="demo2"></h2>
+        <p id="number"></p>
+        <p id="time"></p>
+        <p>---------------------------------------------------------------------------------------------------------------------</p>
+        <br>
+    </header>
+    <script>
+        let x = document.querySelector("p.intro");
+        document.getElementById("demo").innerHTML= 'Rwanda is led by President <b>Kagame Paul</b> till now in 2024' +' '+ x.innerHTML;
+        let y = document.getElementById("headerr");
+        document.getElementById("demo2").innerHTML= 'What we are going to learn is ' +' '+ y.innerHTML;
+        let c = document.getElementById("number").innerHTML = "The number of paragraph here is" +'  '+ document.title.length;
+        document.getElementById("time").innerHTML = 'Current time:' + Date();
+    </script>
+</body>
+</html>
