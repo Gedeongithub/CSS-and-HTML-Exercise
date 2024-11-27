@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function fieldValidator(){
+    let x = document.forms["myForm"]["Fname"].value;
+    let y = document.forms["myForm"]["Lname"].value;
+    if(x == "" || y ==""){
+        alert("Fill out your name please!");
+        return false;
+        const h1 = document.querySelector('h1');
+    }
+    
+}
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello how are you man</h1>
+    <center>
+    <p>Please fill out your information down here</p>
+    <form action="/action_page.php" name="myForm" onsubmit="return fieldValidator()" method="post">
+        First Name <br> <input type="text" name="Fname" value=""><br><br>
+        Last Name <br> <input type="text" name="Lname" value=""><br>
+        <button type="submit">Submit</button>
+
+    </form>
+    </center>
+</body>
+</html>
