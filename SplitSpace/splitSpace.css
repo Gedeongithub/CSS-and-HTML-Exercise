@@ -1,0 +1,56 @@
+#outer{
+    width: 1280px;
+    height: 3219px;
+    background-color:#F0F0F0;
+    display:inline-block;
+    
+}
+img{
+    width: 100%;
+}
+#aboutusvision{
+    width: 896px;
+    height: 840px;
+    top: 1190px;
+    left: 180px;
+    gap: 0px;
+    opacity: 0px;
+   
+}
+#aboutusvision, p h2{
+    text-align: left;
+    
+}
+#aboutusvision h2{
+   color: chocolate;
+   width: 190.79px;
+    height: 58px;
+    top: 1190px;
+    left: 182.42px;
+   
+}
+#form input{
+    width: 752px;
+    height: 59px;
+    gap: 0px;
+    border-radius: 15px;
+    border: none;
+    margin: 22px;
+    display: block;
+    margin-top: 1cm;
+    display: flex;
+}
+button{
+    width: 180px;
+height: 55px;
+top: 2632px;
+left: 180px;
+border-radius: 100px;
+border: none;
+background-color: #F28D00;
+margin-left: 22px;
+}
+::placeholder{
+font-size: large;
+color: #F28D00;
+}
