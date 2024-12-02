@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <p id="paragraph">Please select a country of birth</p>
+        <label for="rwanda">Rwanda</label>
+        <input type="radio" name="country" id="rwanda" value="Rwanda">
+        <label for="tanzania">Tanzania</label>
+        <input type="radio" name="country" id="tanzania" value="Tanzania">
+        
+   
+    <button id="submit">Submit</button>
+    <p id="output"></p>
+    <script>
+        document.getElementById('paragraph').style.color="blue";
+        let subm = document.getElementById("submit");
+        let output= document.getElementById("output");
+        subm.addEventListener('click', () => {
+            let holder= document.getElementsByName("country");
+            holder.forEach((country) => {
+                if(country.checked) {
+                output.innerText = `Your birth country is: ${country.value}`;
+            }   
+            });
+            
+        });
+
+    </script>
+</body>
+</html>

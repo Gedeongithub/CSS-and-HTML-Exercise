@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Validator</title>
+</head>
+<body>
+    <!--[-----------------------------------------------------------------------]-->
+    <section>
+        <h1>JavaScript Validator</h1>
+        <p>Please, enter the year of experience. <br> Years of experience should not be  0, below it and exceed 9</p>
+        Year of experience: <input id="Number" type="number">
+        <button type="submit" id="send" onclick="validate()">Send</button>
+        <p id="store"></p>
+    </section>
+    <!--[-----------------------------------------------------------------------]-->
+    <section>
+        <script>
+            function validate(){
+                let storage = document.getElementById('Number').value;
+                let text;
+                if(isNaN(storage)|| storage <= 0 || storage >=10){
+                text = 'Your input is invalid';
+                } else{
+                text = 'Input is valid';
+                }
+            document.getElementById('store').innerHTML= text;
+            }
+            
+        </script>
+    </section>
+</body>
+</html>

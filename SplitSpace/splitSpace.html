@@ -7,6 +7,25 @@
     <title>SplitSpace</title>
 </head>
 <body>
+    <script>
+       function upperCase() {
+  const x = document.getElementById("fname");
+  x.value = x.value.toUpperCase();
+
+  
+}
+function changed(){
+        const enteredName = document.getElementById('firstname').value;
+        document.getElementById('intered').innerHTML= `    You entered: ${enteredName}`;
+        
+  }
+  function mOver(colorr){
+    colorr.style.backgroundColor = "red";
+  }
+  function mOut(out){
+    out.style.backgroundColor= "orange";
+  }
+    </script>
    
     <section id="outer">
         <div id="photo">
@@ -25,15 +44,16 @@
             <h2 id="signup">SIGN UP</h2>
             <section id="form">
                 <form action="/action_page.php">
-                    <label for="firstname"></label>
-                    <input type="text" name="firstname" value="" placeholder="First Name">
-                    <label for="lastname"></label>
-                    <input type="text" name="lastname" value="" placeholder="Last Name">
+                
+                
+                    <input type="text" id="firstname" value="" placeholder="First Name" onchange="changed()">
+                    <p id="intered" style="color: blue; font: 1em sans-serif;"></p>
+                    <input type="text" placeholder="Last Name" id="fname" oninput="upperCase()">
                     <label for="password"></label>
                     <input type="password" name="password" value="" placeholder="PassWord">
                     <label for="email"></label>
                     <input type="email" name="email" id="email" value="" placeholder="Email">
-                    <button type="submit">Register</button>
+                    <button type="submit" onmouseover="mOver(this)" onmouseout="mOut(this)">Register</button>
                 </form>
             </section>
         </div>

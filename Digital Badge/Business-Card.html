@@ -10,6 +10,19 @@
 <body>
     <center>
     <section id="Outer">
+        <button id="but">Change B color</button>
+        <section>
+            <script>
+                const array = ['yellow', 'blue','tomato','green','white','orange','red','black'];
+                let driver = 0;
+                const textToChange = document.getElementById('Outer');
+                const button1 =document.getElementById('but');
+                button1.addEventListener('click', () => {
+                    textToChange.style.backgroundColor =array[driver];
+                    driver = (driver + 1) % array.length;
+                })
+            </script>
+        </section>
         <div id="inner">
             <img src="Laura Smith2.svg" alt="">
              <h1 id="lauraSmith">Laura Smith</h1>
