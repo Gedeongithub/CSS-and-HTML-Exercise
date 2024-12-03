@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <h3>THE USE OF THE GET ELEMENT BY CLASS NAME</h3>
+        <ul id="menu">
+            <li class="item">CSS</li>
+            <li class="item">HTML</li>
+            <li class="item">React</li>
+            <li class="item">JS</li>
+            <li class="item">C#</li>
+        </ul>
+        <p id="store"></p>
+    </section>
+
+    <section>
+        <script>
+            let menus = document.getElementById('menu');
+            let items = document.querySelectorAll('.item');
+            let storage = document.getElementById('store');
+
+            console.log(items);
+            const data = Array.of(...items).map(item => item.textContent);
+            console.log(data);
+            let arr = data.map(function(elem){
+                return elem + 'language';
+            })
+            console.log(arr)
+           
+           
+        
+            
+        </script>
+    </section>
+</body>
+</html>
