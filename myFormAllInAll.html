@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="" id="myForm">
+      <label for="firstname">First Name </label><br />
+      <input type="text" id="firstname" /><br /><br />
+      <p id="output1"></p>
+      <label for="lastname">Last Name</label><br />
+      <input type="text" id="lastname" disabled/><br /><br />
+      <p id="output2"></p>
+      <label for="tel">Phone No</label><br />
+      <input type="tel" id="tel" /> <br /><br />
+      <p id="output3"></p>
+      <label for="email">Email</label><br />
+      <input type="email" id="email" />
+      <p id="output4"></p>
+      <button type="submit" id="submission">Submit</button>
+    </form>
+    <script>
+      // Access to form button and input values
+
+      const form = document.getElementById("myForm");
+      const firstname = document.getElementById("firstname");
+      const lastname = document.getElementById("lastname");
+      const tel = document.getElementById("tel");
+      const email = document.getElementById("email");
+      const submission = document.getElementById("submission");
+
+      // Access to output values
+
+      const output1 = document.getElementById("output1");
+      const output2 = document.getElementById("output2");
+      const output3 = document.getElementById("output3");
+      const output4 = document.getElementById("output4");
+
+      // Functions space
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        if (firstname.value.trim() === "") {
+          alert("Please fill out your First Name");
+          firstname.style.backgroundColor = "red";
+        } else if (firstname.value.trim() !== "") {
+          firstname.style.backgroundColor = "green";
+          output1.innerText = `You entered ${firstname.value}`;
+        }
+      });
+      //-----------------------------------------------
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        if (lastname.value.trim() === "") {
+          alert("Please fill out your Last Name");
+          lastname.style.backgroundColor = "red";
+        } else if (lastname.value.trim() !== "") {
+          lastname.style.backgroundColor = "green";
+          output2.innerText = `You entered ${lastname.value}`;
+        }
+      });
+      //-----------------------------------------------
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        if (tel.value.trim() === "") {
+          alert("Please fill out your Telephone Number");
+          tel.style.backgroundColor = "red";
+        } else if (tel.value.trim() !== "") {
+          tel.style.backgroundColor = "green";
+          output3.innerText = `You entered ${tel.value}`;
+        }
+      });
+      //------------------------------------------------
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        if (email.value.trim() === "") {
+          alert("Please fill out your Email address");
+          email.style.backgroundColor = "red";
+        } else if (email.value.trim() !== "") {
+          email.style.backgroundColor = "green";
+          output4.innerText = `You entered ${email.value}`;
+        }
+      });
+
+      //-------------------ON  Focus and out Focus-----------------------------------
+      firstname.addEventListener("focus", function () {
+        firstname.style.backgroundColor = "blue";
+      });
+      
+      firstname.addEventListener("blur", function () {
+        firstname.style.backgroundColor = "white";
+      });
+
+      //------------------
+      lastname.addEventListener("focus", function () {
+        console.log(lastname);
+        lastname.style.backgroundColor = "blue";
+        
+      });
+      firstname.addEventListener('input', function(){
+        if (firstname.value !== "") {
+        lastname.removeAttribute('disabled');  
+        } 
+      })
+      
+      lastname.addEventListener("blur", function () {
+        lastname.style.backgroundColor = "white";
+      });
+      //----------------------
+      tel.addEventListener("focus", function () {
+        tel.style.backgroundColor = "blue";
+      });
+      tel.addEventListener("blur", function () {
+        tel.style.backgroundColor = "white";
+      });
+      //-----------
+      email.addEventListener("focus", function () {
+        email.style.backgroundColor = "blue";
+      });
+      email.addEventListener("blur", function () {
+        email.style.backgroundColor = "white";
+      });
+      //-----------disabled------------
+      lastname.addEventListener();
+    </script>
+  </body>
+</html>
