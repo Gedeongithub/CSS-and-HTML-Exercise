@@ -1,0 +1,108 @@
+ 
+ #div1{
+   background-color: #FBFBFB;
+   height: 550px;
+   width: 1200px;
+ }
+
+#menu{
+    display: flex;
+    gap: 60px;
+    color: #445964;
+    padding-left: 150px;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+    list-style-type: none;
+    margin-top: 40px;
+   
+a{
+        text-decoration: none; 
+}
+
+}
+#mainmenu{
+    display: flex;
+    
+}
+
+#pic{
+    
+    float: right;
+    width: 405px;
+    height: 397px;
+   
+}
+ #subdiv p{
+   font-family: Roboto;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.13px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #445964;
+    width: 15cm;
+}
+
+#mainmenu p{
+    font-family: Roboto;
+font-size: 36px;
+font-weight: 900;
+line-height: 42.19px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+}
+#mainmenu img{
+    padding-right: 1cm;
+}
+#btn{
+    width: 310px;
+    height: 45px;
+    top: 700px;
+    left: 251px;
+    border-radius: 15px;
+    opacity: 0px;
+    background-color: #263138;
+    color: white;
+    font-size: larger;
+}    
+/*------------------------------------*/
+#div2{
+    width: 1200px;
+    height: 700px;
+    top: 1080px;
+    left: -49px;
+    gap: 0px;
+    opacity: 0px;
+    
+    background-color: #FBFBFB;
+    text-align: center;
+}
+#Hard-Skills{
+    
+    display: grid;
+    grid: 150px / auto auto auto auto;
+    width: 1000px;
+    margin-left: 2cm; 
+}
+#div3{
+    
+    height: 700px;
+    width: 1200px;
+    margin-top: 0px;
+    background-color: #FBFBFB;
+    text-align: center;
+img{
+    margin: 30px;
+}
+margin-top: -1cm;
+}
+#div4{
+    img{
+    width: 1000px;
+}
+}
+

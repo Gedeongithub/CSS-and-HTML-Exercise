@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Portifalio</title>
+</head>
+<link rel="stylesheet" href="Portifolio_Project.css">
+<body>
+    <div id="div1">
+        <div id="mainmenu">
+            <img src="Group.svg" alt="image is not available">
+        <p>Matheus Campos</p>
+        <ul id="menu">
+            <li><a href="###">Home</a></li>
+            <li><a href="###">Sobre</a></li>
+            <li><a href="###">Portifolio</a></li>
+            <li><a href="###">Servicos</a></li>
+            <li><a href="###">Contato</a></li>
+        </ul>
+    </div>
+    
+    <div id="subdiv">
+        <img id="pic" src="Home_art 1.svg" alt="Image isn't available">
+        <p>Olá pessoas, </p>
+        <p id="paragraph" style="font-size: 35px;">EU SOU UM<br> 
+            PROGRAMADOR</p>
+        <p>Seja bem-vindo ao meu portifólio website</p>
+    </div>
+        
+        <button type="button" id="btn">Saiba mais sobre mim</button>
+       
+    </div>
+    <!------------------------------------------------------->
+    <div id="div2">
+        <img src="matheus_about 1.svg" alt="Image is loading">
+        <h3>Matheus Campos</h3>
+        <p>My name is Matheus Amauri de Jesus Campos 👋
+            I'm from Brazil, São José dos Campos/SP. <br> Studying, 4th period, Systems Analysis and Development at the Fatec - São José dos Campos.</p>
+        <h3>Hard Skills</h3>
+        <div id="Hard-Skills">
+            <h4>Python</h4>
+            <h4>HTML</h4>
+            <h4>React</h4>
+            <h4>C</h4>
+            <h4>JavaScript</h4>
+            <h4>CSS</h4>
+            <h4>Mysql</h4>
+            <h4>PostGres</h4>
+        </div>
+
+    </div>
+    <!------------------------------------------------------->
+    <div id="div3">
+        <p>Tecnologias</p>
+        <h3>Já utilizadas</h3>
+        <img src="JS.svg" alt="Image is not available">
+        <img src="Python.svg" alt="Image is not available">
+        <img src="circle.svg" alt="image is not available">
+        <p>Tecnologias</p>
+        <h3>Atualmente Desenvolvendo</h3>
+        <img src="one.svg" alt="">
+        <img src="two.svg" alt="">
+        <img src="Three.svg" alt="">
+        <img src="Four.svg" alt="">
+    </div>
+    <!------------------------------------------------------->
+    <div id="div4">
+<img src="Minhas Techs.svg" alt="">
+    </div>
+   
+
+
+
+    <script>
+        function add(){
+    return new Promise((resolve,reject)=>{
+           let sum = 2+2
+           if(sum == 3){
+               resolve('Sum is correct')
+           }else{
+               reject('Sum is incorrect')
+           }
+    })
+}
+function division(){
+    return new Promise((resolve,reject)=>{
+           let divide = 2/2
+           if(divide == 1){
+               resolve('Division is correct')
+           }else{
+               reject('Division is incorrect')
+           }
+    })
+}
+function times(){
+    return new Promise((resolve,reject)=>{
+           let product = 2*2
+           if(product == 4){
+               resolve('Product is correct')
+           }else{
+               reject('Prodct is incorrect')
+           }
+    })
+}
+
+
+
+async function checker(){
+    let arr = await Promise.all([add(),times(),division()])
+    try{
+        let result = arr
+        console.log(result)
+    }
+    catch(e){
+        console.log(e)
+    }
+}
+checker()
+    </script>
+</body>
+</html>
